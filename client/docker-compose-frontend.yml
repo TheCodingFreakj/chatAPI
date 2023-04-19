@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web-frontend:
+    image: 809958860027.dkr.ecr.eu-north-1.amazonaws.com/pallavifrontend:latest
+    environment:
+      PORT: 8080
+      PROXY_API: http://16.16.27.206:5000/
+    ports:
+      - 8080:8080

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web-backend:
+    image: 809958860027.dkr.ecr.eu-north-1.amazonaws.com/pallavibackend:latest
+    environment:
+     - CHATGPT_TOKEN=${CHATGPT_TOKEN}
+    ports:
+      - 5000:5000
